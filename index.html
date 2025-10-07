@@ -1,5 +1,351 @@
-<center>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderley Albuquerque | Senior PHP & JavaScript Developer</title>
+    <meta
+      name="description"
+      content="Senior PHP Developer with 10+ years experience building scalable web applications. Expert in CakePHP, Slim Framework, React, Vue.js, and modern development practices. Available for consulting and development projects."
+    />
+    <meta name="author" content="Wanderley Albuquerque" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="PHP Developer, JavaScript Developer, CakePHP, Slim Framework, React, Vue.js, Backend Developer, Full Stack Developer, Web Development, API Development"
+    />
+    <link rel="canonical" href="https://wanderleyfa.com/" />
 
-olá mundo!
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile" />
+    <meta
+      property="og:title"
+      content="Wanderley Albuquerque | Senior PHP & JavaScript Developer"
+    />
+    <meta
+      property="og:description"
+      content="Senior PHP Developer with 10+ years experience building scalable web applications. Expert in CakePHP, Slim Framework, React, Vue.js, and modern development practices."
+    />
+    <meta property="og:url" content="https://wanderleyfa.com/" />
+    <meta
+      property="og:image"
+      content="https://wanderleyfa.com/wanderley.jpeg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Wanderley Albuquerque" />
 
-</center>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Wanderley Albuquerque | Senior PHP & JavaScript Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Senior PHP Developer with 10+ years experience building scalable web applications. Expert in CakePHP, Slim Framework, React, Vue.js."
+    />
+    <meta
+      name="twitter:image"
+      content="https://wanderleyfa.com/wanderley.jpeg"
+    />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Wanderley Albuquerque",
+        "jobTitle": "Senior PHP & JavaScript Developer",
+        "description": "Senior PHP Developer with 10+ years experience building scalable web applications",
+        "url": "https://wanderleyfa.com",
+        "image": "https://wanderleyfa.com/wanderley.jpeg",
+        "sameAs": [
+          "https://www.linkedin.com/in/wanderleyfa",
+          "https://github.com/wanderleyfa"
+        ],
+        "knowsAbout": [
+          "PHP Development",
+          "JavaScript Development",
+          "Next.js Development",
+          "Laravel Framework",
+          "CakePHP Framework",
+          "Slim Framework",
+          "React.js",
+          "Vue.js",
+          "Backend Development",
+          "API Development",
+          "Web Development",
+          "Responsive Design",
+          "Modern Web Technologies"
+        ],
+        "hasCreated": [
+          {
+            "@type": "WebSite",
+            "name": "Tayrone Oliveira Official Website",
+            "url": "https://www.tayroneoliveiraoficial.com.br/",
+            "description": "Official website developed with Next.js featuring modern design and API integrations",
+            "programmingLanguage": ["JavaScript", "TypeScript"],
+            "runtimePlatform": "Next.js"
+          }
+        ]
+      }
+    </script>
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preload" href="./output.css" as="style" />
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./language-switcher.css" rel="stylesheet" />
+    <script src="./translations.js"></script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-P949R92M");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body class="bg-gray-100">
+    <!-- Botões de seleção de idioma -->
+    <div class="language-switcher">
+      <button
+        class="language-button"
+        data-lang="en"
+        onclick="window.i18n.setLanguage('en')"
+        title="Switch to English"
+      >
+        EN
+      </button>
+      <button
+        class="language-button"
+        data-lang="pt"
+        onclick="window.i18n.setLanguage('pt')"
+        title="Mudar para Português"
+      >
+        PT
+      </button>
+      <button
+        class="language-button"
+        data-lang="es"
+        onclick="window.i18n.setLanguage('es')"
+        title="Cambiar a Español"
+      >
+        ES
+      </button>
+    </div>
+    <section
+      class="bg-white dark:bg-gray-900 flex items-center justify-center min-h-screen"
+    >
+      <div
+        class="py-8 px-4 mx-auto max-w-2xl w-full lg:py-16 flex flex-col items-center"
+      >
+        <div
+          class="place-self-center w-full shadow-lg rounded-lg bg-white dark:bg-gray-800 p-6 lg:p-8"
+        >
+          <h1
+            class="mb-8 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl dark:text-white text-center"
+            data-i18n="name"
+          >
+            Wanderley Albuquerque
+          </h1>
+          <p
+            class="mb-6 text-justify font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+            data-i18n="intro"
+          >
+            Hi, I'm Wanderley Albuquerque — a
+            <strong>senior backend developer</strong> with over a decade of
+            experience building reliable and scalable web applications. I
+            specialize in
+            <strong>Core PHP, CakePHP, and Slim Framework</strong>, crafting
+            robust APIs and backend systems that power business-critical
+            solutions.
+          </p>
+          <p
+            class="mb-6 text-justify font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+            data-i18n="passion"
+          >
+            I'm passionate about
+            <strong
+              >clean architecture, automation, and collaborative
+              development</strong
+            >
+            — always striving to simplify complexity while delivering real
+            business value through innovative technical solutions.
+          </p>
+          <p
+            class="mb-6 text-justify font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+            data-i18n="experience"
+          >
+            Throughout my career, I've successfully worked across legacy systems
+            and cutting-edge modern stacks, consistently delivering
+            <strong>secure, testable, and maintainable code</strong>. I'm
+            proficient with
+            <strong>CI/CD pipelines, Docker, Git workflows</strong>, and modern
+            development practices that ensure fast, reliable, and continuous
+            delivery.
+          </p>
+          <p
+            class="mb-6 text-justify font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl"
+            data-i18n="frontend"
+          >
+            On the frontend, I have extensive experience with
+            <strong>JavaScript</strong>, working with modern libraries and
+            frameworks like
+            <strong>jQuery, React.js, Next.js, and Vue.js</strong>
+            to build dynamic, responsive, and user-friendly interfaces that
+            deliver exceptional user experiences.
+          </p>
+          <p
+            class="mb-8 text-justify font-light text-gray-500 lg:mb-10 md:text-lg lg:text-xl"
+            data-i18n="cta"
+          >
+            Ready to tackle your next challenge?
+            <strong>Let's build something exceptional together.</strong>
+          </p>
+
+          <!-- Seção de Projetos -->
+          <div class="mb-8">
+            <h2
+              class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center"
+              data-i18n="projectsTitle"
+            >
+              Featured Projects
+            </h2>
+
+            <!-- Showcase do Projeto Principal -->
+            <div class="project-showcase">
+              <img
+                src="tayrone.jpg"
+                style="border-radius: 15px"
+                alt="Tayrone Oliveira Official Website"
+              />
+              <div style="font-size: 2.5rem; margin-bottom: 1rem">🎵</div>
+              <h2
+                style="
+                  font-size: 1.875rem;
+                  font-weight: bold;
+                  margin-bottom: 1rem;
+                "
+                data-i18n="showcaseTitle"
+              >
+                Tayrone Oliveira - Site Oficial
+              </h2>
+              <p
+                style="font-size: 1.25rem; margin-bottom: 1.5rem; opacity: 0.9"
+                data-i18n="showcaseDescription"
+              >
+                Site completo desenvolvido com Next.js, destacando habilidades
+                em tecnologias modernas, design responsivo e integrações
+                avançadas com APIs.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-badge">Next.js 14</span>
+                <span class="tech-badge">React 18</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">Tailwind CSS</span>
+                <span class="tech-badge">API Integration</span>
+                <span class="tech-badge">Responsive Design</span>
+                <span class="tech-badge">Performance Optimization</span>
+              </div>
+              <a
+                href="https://www.tayroneoliveiraoficial.com.br/"
+                target="_blank"
+                class="btn-primary"
+                data-i18n="showcaseLinkText"
+              >
+                🌐 Visitar Site Oficial
+              </a>
+            </div>
+          </div>
+          <div class="flex gap-4 justify-center">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/wanderleyfa/?locale=en_US"
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
+              <img src="linkedin.svg" alt="Linkedin" width="100" height="30" />
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/wanderleyfa"
+              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            >
+              <img src="github.svg" alt="Github" width="100" height="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botão de voltar ao topo -->
+    <button
+      id="back-to-top"
+      class="back-to-top-btn"
+      onclick="scrollToTop()"
+      title="Voltar ao topo"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M5 12L12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+
+    <script>
+      // Função para voltar ao topo
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Controlar visibilidade do botão baseado na rolagem
+      window.addEventListener("scroll", function () {
+        const backToTopBtn = document.getElementById("back-to-top");
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        // Calcular 25% da altura total da página
+        const twentyFivePercent = (scrollHeight - clientHeight) * 0.25;
+
+        if (scrollTop > twentyFivePercent) {
+          backToTopBtn.classList.add("visible");
+        } else {
+          backToTopBtn.classList.remove("visible");
+        }
+      });
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P949R92M"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
