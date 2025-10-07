@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Demo - Wanderley FA</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link href="./language-switcher.css" rel="stylesheet" />
+    <style>
+      .demo-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        font-family: system-ui, sans-serif;
+      }
+      .project-showcase {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+      }
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin: 1rem 0;
+      }
+      .tech-badge {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      .feature-card {
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .feature-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .feature-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+      .stat-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        padding: 1rem;
+        text-align: center;
+      }
+      .stat-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #3b82f6;
+      }
+      .stat-label {
+        font-size: 0.875rem;
+        color: #64748b;
+        margin-top: 0.25rem;
+      }
+      .cta-section {
+        background: #1e293b;
+        color: white;
+        border-radius: 12px;
+        padding: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .btn-primary {
+        display: inline-block;
+        background: #3b82f6;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0.5rem;
+        transition: background 0.2s;
+      }
+      .btn-primary:hover {
+        background: #2563eb;
+      }
+      .btn-secondary {
+        display: inline-block;
+        background: transparent;
+        color: #3b82f6;
+        border: 2px solid #3b82f6;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        margin: 0.5rem;
+        transition: all 0.2s;
+      }
+      .btn-secondary:hover {
+        background: #3b82f6;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Botões de idioma -->
+    <div class="language-switcher">
+      <button
+        class="language-button"
+        data-lang="en"
+        onclick="window.i18n?.setLanguage('en')"
+        title="English"
+      >
+        EN
+      </button>
+      <button
+        class="language-button"
+        data-lang="pt"
+        onclick="window.i18n?.setLanguage('pt')"
+        title="Português"
+      >
+        PT
+      </button>
+      <button
+        class="language-button"
+        data-lang="es"
+        onclick="window.i18n?.setLanguage('es')"
+        title="Español"
+      >
+        ES
+      </button>
+    </div>
+
+    <div class="demo-container">
+      <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">
+        🚀 Portfolio Enhancement Demo
+      </h1>
+      <p class="text-center text-gray-600 mb-8 text-lg">
+        Demonstração de como o projeto <strong>Tayrone Oliveira</strong> foi
+        integrado ao portfólio pessoal
+      </p>
+
+      <!-- Showcase do Projeto Principal -->
+      <div class="project-showcase">
+        <div class="feature-icon">🎵</div>
+        <h2 class="text-3xl font-bold mb-4">Tayrone Oliveira - Site Oficial</h2>
+        <p class="text-xl mb-6 opacity-90">
+          Site completo desenvolvido com Next.js, destacando habilidades em
+          tecnologias modernas, design responsivo e integrações avançadas com
+          APIs.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-badge">Next.js 14</span>
+          <span class="tech-badge">React 18</span>
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">Tailwind CSS</span>
+          <span class="tech-badge">API Integration</span>
+          <span class="tech-badge">Responsive Design</span>
+          <span class="tech-badge">Performance Optimization</span>
+        </div>
+        <a
+          href="https://www.tayroneoliveiraoficial.com.br/"
+          target="_blank"
+          class="btn-primary"
+        >
+          🌐 Visitar Site Oficial
+        </a>
+      </div>
+
+      <!-- Características Técnicas -->
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="text-xl font-bold mb-2">Next.js 14</h3>
+          <p class="text-gray-600">
+            Utilizando a versão mais recente do Next.js com App Router, Server
+            Components e otimizações automáticas.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="text-xl font-bold mb-2">100% Responsivo</h3>
+          <p class="text-gray-600">
+            Design completamente adaptável para todos os dispositivos, de
+            smartphones a desktops de alta resolução.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔗</div>
+          <h3 class="text-xl font-bold mb-2">Integrações com APIs</h3>
+          <p class="text-gray-600">
+            Múltiplas integrações com APIs externas para conteúdo dinâmico,
+            redes sociais e funcionalidades avançadas.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3 class="text-xl font-bold mb-2">Design Moderno</h3>
+          <p class="text-gray-600">
+            Interface contemporânea com Tailwind CSS, animações suaves e
+            experiência de usuário excepcional.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="text-xl font-bold mb-2">Performance</h3>
+          <p class="text-gray-600">
+            Otimizado para velocidade com lazy loading, image optimization e
+            code splitting automático.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="text-xl font-bold mb-2">Boas Práticas</h3>
+          <p class="text-gray-600">
+            Código limpo, TypeScript, testes automatizados e seguindo padrões da
+            indústria.
+          </p>
+        </div>
+      </div>
+
+      <!-- Estatísticas do Projeto -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Responsivo</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">95+</div>
+          <div class="stat-label">Lighthouse Score</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">API Integrations</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">Next.js 14</div>
+          <div class="stat-label">Latest Framework</div>
+        </div>
+      </div>
+
+      <!-- Impacto no Portfolio -->
+      <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+        <h3 class="text-2xl font-bold mb-4 text-gray-900">
+          📈 Impacto no Portfolio
+        </h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-bold text-lg mb-2 text-green-600">
+              ✅ O que demonstra:
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                • <strong>Expertise em Next.js</strong> - Framework moderno
+              </li>
+              <li>
+                • <strong>Habilidades Frontend</strong> - React + TypeScript
+              </li>
+              <li>
+                • <strong>Design Responsivo</strong> - Mobile-first approach
+              </li>
+              <li>
+                • <strong>Integração APIs</strong> - Conectividade externa
+              </li>
+              <li>• <strong>Performance</strong> - Otimização avançada</li>
+              <li>• <strong>UX/UI</strong> - Interface moderna e intuitiva</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-2 text-blue-600">
+              🎯 Benefícios para clientes:
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                • <strong>Proof of Concept</strong> - Projeto real funcionando
+              </li>
+              <li>• <strong>Tecnologias Atuais</strong> - Stack moderna</li>
+              <li>
+                • <strong>Qualidade Comprovada</strong> - Site profissional
+              </li>
+              <li>• <strong>Versatilidade</strong> - Frontend + Backend</li>
+              <li>
+                • <strong>Experiência Completa</strong> - Do design ao deploy
+              </li>
+              <li>
+                • <strong>Resultados Tangíveis</strong> - Portfolio visível
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta-section">
+        <h3 class="text-2xl font-bold mb-4">
+          🚀 Pronto para Seu Próximo Projeto?
+        </h3>
+        <p class="text-lg mb-6 opacity-90">
+          Com experiência comprovada em projetos reais como o site do Tayrone
+          Oliveira, posso ajudar você a criar soluções modernas e eficientes.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="./index.html" class="btn-primary">
+            👤 Ver Portfolio Completo
+          </a>
+          <a
+            href="https://www.tayroneoliveiraoficial.com.br/"
+            target="_blank"
+            class="btn-secondary"
+          >
+            🌐 Explorar Projeto
+          </a>
+        </div>
+      </div>
+
+      <!-- Tecnologias Detalhadas -->
+      <div class="bg-white border border-gray-200 rounded-lg p-6">
+        <h3 class="text-2xl font-bold mb-4 text-gray-900">
+          🛠️ Stack Tecnológico Completo
+        </h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-bold text-lg mb-3 text-blue-600">Frontend</h4>
+            <ul class="space-y-1 text-sm">
+              <li>• Next.js 14 (App Router)</li>
+              <li>• React 18 (Server Components)</li>
+              <li>• TypeScript</li>
+              <li>• Tailwind CSS</li>
+              <li>• Framer Motion</li>
+              <li>• React Hook Form</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-3 text-green-600">
+              Backend & APIs
+            </h4>
+            <ul class="space-y-1 text-sm">
+              <li>• API Routes (Next.js)</li>
+              <li>• External API Integration</li>
+              <li>• Database Connection</li>
+              <li>• Authentication</li>
+              <li>• File Upload</li>
+              <li>• Email Services</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-3 text-purple-600">
+              Deploy & Tools
+            </h4>
+            <ul class="space-y-1 text-sm">
+              <li>• Vercel Deploy</li>
+              <li>• Git Workflow</li>
+              <li>• ESLint + Prettier</li>
+              <li>• Performance Monitoring</li>
+              <li>• SEO Optimization</li>
+              <li>• Analytics Integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./translations.js"></script>
+    <script>
+      console.log("Portfolio demo carregado");
+      console.log("Projeto destacado: Tayrone Oliveira - Site Oficial");
+      console.log("URL: https://www.tayroneoliveiraoficial.com.br/");
+
+      // Analytics simulado
+      function trackProjectView() {
+        console.log("Projeto visualizado: Tayrone Oliveira");
+      }
+
+      document.addEventListener("DOMContentLoaded", trackProjectView);
+    </script>
+  </body>
+</html>
